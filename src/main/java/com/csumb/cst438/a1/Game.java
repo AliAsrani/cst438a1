@@ -3,13 +3,14 @@ package com.csumb.cst438.a1;
 import static com.csumb.cst438.a1.MyHttpServer.RESOURCE_DIR;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 /**
  * Game contains logic to play hangman game.
  * Includes code to generate new words,
  * process user guess, determine win or lose.
- * @author David
+ * @author Ali Asrani
  * @version 1.0
  */
 public class Game {
@@ -28,12 +29,14 @@ public class Game {
     private StringBuffer displayWord; // part of the word (if any) to show user
     private ArrayList<String> wordlist;  // list of words
     
+    
     public Game() {
         word="computer";
         createDisplayWord();
         state=1;
         wordlist=null;
         generator = new Random();
+        
     }
     
     public int getState(){
@@ -43,6 +46,7 @@ public class Game {
     public String getWord(){
         return word;
     }
+
     
     public String getDisplayWord(){
         return displayWord.toString();
@@ -50,9 +54,8 @@ public class Game {
     
     public void startNewGame() {
         state = 1;
-        word = "computer";
+        word = randomWord();
         createDisplayWord();
-        
     }
     
     /*
@@ -64,6 +67,9 @@ public class Game {
      *        3 = bad guess.  Lost game.
      */
     public int playGame(char guess) {
+            
+            
+        
             boolean correctGuess = updateDisplayWord(guess);
             if (correctGuess==false) { 
                 state++;

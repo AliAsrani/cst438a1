@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-<<<<<<< HEAD
-    <groupId>com.mycompany</groupId>
-    <artifactId>cst438a1</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
-=======
     <groupId>com.csumb.cst438</groupId>
     <artifactId>cst438-a1</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -25,7 +19,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
->>>>>>> 42a7067c8d00859d6f2a7c9c88be5cabf5e83c63
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
