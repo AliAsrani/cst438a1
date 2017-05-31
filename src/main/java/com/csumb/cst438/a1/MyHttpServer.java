@@ -59,7 +59,7 @@ public class MyHttpServer {
                     cookie = generateCookie();
                     response = "<!DOCTYPE html><html><head><title>MyHttpServer</title></head><body><h2>Hangman</h2>"
                             + "<img src=\"" + "h" + game.getState() + ".gif" + "\">"
-                            + "<h2 style=\"font-family:'Lucida Console', monospace\"> " + game.getDisplayWord() + "</h2>"
+                            + "<h2 style=\"font-family:'Lucida Console', monospace\">" + game.getDisplayWord() + "</h2>"
                             + "<form action=\"/\" method=\"get\"> "
                             + "Guess a character <input type=\"text\" name=\"guess\"><br>"
                             + "<input type=\"submit\" value=\"Submit\">" + "</form></body></html>";
@@ -107,8 +107,8 @@ public class MyHttpServer {
                     else {
                         response = "<!DOCTYPE html><html><head><title>MyHttpServer</title></head><body><h2>Hangman</h2>"
                                     + "<img src=\"" + "h" + game.getState() + ".gif" + "\">"
-                                    + "<h2 style=\"font-family:'Lucida Console', monospace\"> " + game.getDisplayWord() + "</h2>"
-                                    + "<h2 style=\"font-family:'Lucida Console', monospace: color:Red\"> Invalid Input! Please try again </h2>"
+                                    + "<h2 style=\"font-family:'Lucida Console', monospace\">" + game.getDisplayWord() + "</h2>"
+                                    + "<h2 style=\"font-family:'Lucida Console', monospace; color:red;\">Invalid Input! Please try again</h2>"
                                     + "<form action=\"/\" method=\"get\"> "
                                     + "Guess a character <input type=\"text\" name=\"guess\"><br>"
                                     + "<input type=\"submit\" value=\"Submit\">" + "</form></body></html>";
